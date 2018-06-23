@@ -29,6 +29,9 @@ public class InformatioTransfer {
         
         syst.notifyObservers("There will be online tomorrow");
         
+        syst.remove(Danish);
+        syst.notifyObservers("Danish removed");
+        
     }
     
 }
