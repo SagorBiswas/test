@@ -16,6 +16,19 @@ public class InformatioTransfer {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Student Sagor = new Student("SAGOR", "1505060");
+        Student Mahbub = new Student("Mahbub","1505035");
+        Student Danish = new Student("Danish", "1505053");
+                
+        InfoSystem syst = new InfoSystem();
+        
+        syst.register(Danish);
+        syst.register(Sagor);
+        syst.register(Mahbub);
+        
+        syst.notifyObservers("There will be online tomorrow");
+        
     }
     
 }
